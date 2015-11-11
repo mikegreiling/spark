@@ -21,6 +21,8 @@ class DotenvConfiguation implements ConfigurationInterface
 
     public function getSettings(Loader $loader)
     {
-        return new Settings($loader->toArray());
+        $settings = new Settings($loader->toArray());
+        $injector->share($settings);
+        return $settings;
     }
 }
