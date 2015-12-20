@@ -13,6 +13,7 @@ class DefaultConfigurationTest extends TestCase
             'Spark\Configuration\AurynConfiguration',
             'Spark\Configuration\DiactorosConfiguration',
             'Spark\Configuration\NegotiationConfiguration',
+            'Spark\Configuration\MiddlewareConfiguration',
             'Spark\Configuration\PayloadConfiguration',
             'Spark\Configuration\RelayConfiguration',
         ];
