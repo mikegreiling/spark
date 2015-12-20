@@ -4,10 +4,10 @@ namespace Spark\Middleware;
 
 use Relay\Middleware\ResponseSender;
 use Spark\Handler\ActionHandler;
+use Spark\Handler\DispatchHandler;
 use Spark\Handler\ExceptionHandler;
 use Spark\Handler\FormContentHandler;
 use Spark\Handler\JsonContentHandler;
-use Spark\Handler\RouteHandler;
 
 class DefaultCollection extends Collection
 {
@@ -16,9 +16,9 @@ class DefaultCollection extends Collection
         parent::__construct(array_merge([
             ResponseSender::class,
             ExceptionHandler::class,
-            RouteHandler::class,
             JsonContentHandler::class,
             FormContentHandler::class,
+            DispatchHandler::class,
             ActionHandler::class,
         ], $middleware));
     }

@@ -14,10 +14,10 @@ class DefaultCollectionTest extends TestCase
         $expected = [
             'Relay\Middleware\ResponseSender',
             'Spark\Handler\ActionHandler',
+            'Spark\Handler\DispatchHandler',
             'Spark\Handler\ExceptionHandler',
             'Spark\Handler\FormContentHandler',
             'Spark\Handler\JsonContentHandler',
-            'Spark\Handler\RouteHandler',
         ];
 
         foreach ($expected as $class) {
